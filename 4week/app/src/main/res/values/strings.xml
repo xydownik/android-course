@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">4week</string>
+    <string name="search_hint">Any Pizza...</string>
 </resources>
