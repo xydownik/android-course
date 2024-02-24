@@ -26,9 +26,8 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
         searchView = binding.searchBar
         adapter = PizzaAdapter(
-            onPizzaClick = {
-                handlePizzaClick(it)
-            }
+            onPizzaClick = { handlePizzaClick(it) },
+            onNewPizzaClick = { handleNewPizzaClick(it) }
         )
         adapter?.setData(pizzaList)
         binding.recyclerView.adapter = adapter
@@ -66,6 +65,12 @@ class MainActivity : AppCompatActivity() {
     private fun handlePizzaClick(pizza: Pizza) {
         val intent = Intent(this,SecondActivity::class.java)
         intent.putExtra(SecondActivity.KEY_RESULT,pizza)
+        startActivity(intent)
+    }
+
+    private fun handleNewPizzaClick(pizza: Pizza) {
+        val intent = Intent(this, SecondActivity::class.java)
+        intent.putExtra(SecondActivity.KEY_RESULT, pizza)
         startActivity(intent)
     }
 

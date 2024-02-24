@@ -37,12 +37,17 @@
             android:layout_margin="12dp"
             android:textSize="12sp"
             android:textStyle="normal" />
-        <TextView
+
+        <Button
             android:id="@+id/pizza_price"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="36dp"
+            android:layout_marginLeft="12dp"
+            android:backgroundTint="@color/light_orange"
+            android:textColor="@color/orange"
+            android:text="2400KZT"
             android:textSize="12sp"
-            android:textStyle="normal"/>
+            android:textStyle="normal" />
 
     </LinearLayout>
 

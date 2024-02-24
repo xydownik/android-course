@@ -7,7 +7,10 @@ data class Pizza (
     val size : Int,
     val description : String,
     val image : Int,
-    val price : Int
+    val price : Int,
+    val priceSmall:Int,
+    val priceLarge: Int,
+    val new:Boolean
 ):Serializable{
 
 }
